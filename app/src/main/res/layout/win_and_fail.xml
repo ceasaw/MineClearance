@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_0">
+        <ImageButton
+            android:id="@+id/PlayAgainBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/playagainbtn"  />
+
+        <ImageButton
+            android:id="@+id/SendGradeBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/sendgradebtn"
+            android:layout_below="@+id/PlayAgainBtn"
+            android:layout_toLeftOf="@+id/PlayAgainBtn"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="-20dp"  />
+
+        <ImageButton
+            android:id="@+id/ReturnBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/returnbtn"
+            android:layout_below="@+id/PlayAgainBtn"
+            android:layout_toRightOf="@+id/PlayAgainBtn"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="-20dp"  />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="请输入用户名"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="285dp"
+            android:layout_height="106dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="108dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:textColor="#ffffffff"
+            android:textSize="50dp" />
+        android:text="Name" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

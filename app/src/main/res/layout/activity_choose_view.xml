@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseViewActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mainbackground" />
+
+    <ImageButton
+        android:id="@+id/BasicButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/basic"
+        android:onClick="Basic" />
+
+    <ImageButton
+        android:id="@+id/IntermediateButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/middle"
+        android:layout_below="@+id/BasicButton"
+        android:layout_toLeftOf="@+id/BasicButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="-20dp"
+        android:onClick="Intermediate" />
+
+    <ImageButton
+        android:id="@+id/AdvancedButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/advance"
+        android:layout_below="@+id/BasicButton"
+        android:layout_toRightOf="@+id/BasicButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="-20dp"
+        android:onClick="Advanced" />
+
+    <ImageButton
+        android:id="@+id/ReturnButton"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/BasicButton"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/returnbutton"
+        android:onClick="Return" />
+
+
+</RelativeLayout>

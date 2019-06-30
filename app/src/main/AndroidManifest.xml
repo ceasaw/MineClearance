@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hellotheworld.mineclearance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mineclearace"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChooseViewActivity" />
+        <activity android:name=".GameSceneActivity" />
+        <activity android:name=".Background_Img_Change" />
+        <activity android:name=".Success_Fail_Scene"></activity>
+        <activity android:name=".Common.Rank.Activity.ScreenShotActivity"></activity>
+        <activity android:name=".Common.Rank.Activity.RankActivity" />
+    </application>
+
+</manifest>

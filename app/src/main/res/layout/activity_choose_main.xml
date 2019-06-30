@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseViewActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mainbackground" />
+
+    <ImageButton
+        android:id="@+id/DifficultyButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selectdifficulty"  />
+
+    <ImageButton
+        android:id="@+id/RankinglistButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/rankinglist"
+        android:layout_below="@+id/DifficultyButton"
+        android:layout_toLeftOf="@+id/DifficultyButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="-20dp"  />
+
+    <ImageButton
+        android:id="@+id/ThemeButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/selectheme"
+        android:layout_below="@+id/DifficultyButton"
+        android:layout_toRightOf="@+id/DifficultyButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="-20dp"  />
+
+    <ImageButton
+        android:id="@+id/ExitButton"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/DifficultyButton"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/exitgame"  />
+
+
+</RelativeLayout>

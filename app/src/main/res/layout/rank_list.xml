@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ListView android:id="@+id/rank_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ranklist_rank_rect"
+    android:descendantFocusability="blocksDescendants"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+
+

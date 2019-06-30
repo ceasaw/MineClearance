@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="press">#25fa55</color>
+    <color name="rank_not_selected">#107b77</color>
+    <color name="rank_selected">#03354d</color>
+    <color name="color_black">#000000</color>
+    <color name="color_gold">#FFD700</color>
+    <color name="color_silver">#C0C0C0</color>
+    <color name="color_copper">#FF9912</color>
+</resources>

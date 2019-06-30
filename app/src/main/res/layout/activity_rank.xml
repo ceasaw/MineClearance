@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ranklist_bg"
+    tools:context=".Common.Rank.Activity.RankActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/rank_not_selected">
+
+        <RelativeLayout
+            android:id="@+id/basicLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/ranklist_basic" />
+        </RelativeLayout>
+        <!--layout_weight这个属性为权重，让两个textview平分这个linearLayout-->
+
+        <!--android:background="@drawable/selector"/>-->
+        <RelativeLayout
+            android:id="@+id/intermediateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/ranklist_intermediate" />
+        </RelativeLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/intermediateLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1.0"-->
+        <!--android:gravity="center"-->
+        <!--android:text="intermediate"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="20dip"-->
+        <!--android:background="@color/rank_not_selected"/>-->
+        <!--android:background="@drawable/selector"/>-->
+        <RelativeLayout
+            android:id="@+id/advancedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/ranklist_advanced" />
+        </RelativeLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/advancedLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1.0"-->
+        <!--android:gravity="center"-->
+        <!--android:text="advanced"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="20dip"-->
+        <!--android:background="@color/rank_not_selected"/>-->
+        <!--android:background="@drawable/selector"/>-->
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ui_10_dip"
+        android:layout_below="@id/linearLayout">
+        <!--android:layout_marginVertical="20dp"-->
+    </android.support.v4.view.ViewPager>
+
+
+
+    <ImageView
+        android:id="@+id/rank_back"
+        android:layout_alignBottom="@id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ranklist_back"/>
+</RelativeLayout>

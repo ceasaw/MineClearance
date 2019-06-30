@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainbackground"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="608px" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:numColumns="2"
+            android:text="选择喜欢的背景："
+            android:textColor="#ffffffff" />
+
+        <GridView
+            android:id="@+id/GridView1"
+            android:layout_width="match_parent"
+            android:layout_height="703px"
+            android:numColumns="2"
+            android:stretchMode="columnWidth" />
+
+        <ImageButton
+            android:id="@+id/backReturn"
+            android:layout_width="717px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@drawable/returnpage" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
