@@ -1,2 +1,3 @@
 # MineClearance
 利用android原生开发的扫雷游戏demo
+可以下载apk文件进行试玩
