@@ -14,3 +14,5 @@ gradlew.bat
 local.properties
 build
 .idea
+app/release/MineClearance.apk
+app/src.zip
